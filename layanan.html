@@ -41,14 +41,14 @@
 
                 <!-- Nama lengkap, NIM, Program Studi, Jenis Layanan, Tanggal Pengajuan, Keterangan -->
                 <!-- Awal Form -->
-                <form action="#" target="_blank" method="post" class="form-card">
+                <form action="#" method="post" class="form-card" onsubmit="return validasiForm()">
                     <fieldset>
                         <legend>Data Pengajuan</legend>
 
                         <!-- Input Nama Lengkap -->
                         <div class="form-group">
                             <label for="nama">Nama Lengkap</label>
-                            <input type="text" id="nama" required placeholder="Masukkan nama lengkap...">
+                            <input type="text" id="nama" placeholder="Masukkan nama lengkap...">
                         </div>
 
                         <!-- NIM dan Program Studi -->
@@ -56,7 +56,7 @@
                             <!-- NIM -->
                             <div class="form-group">
                                 <label for="nim">NIM</label>
-                                <input type="text" id="nim" required placeholder="Contoh: 241120172">
+                                <input type="text" id="nim" placeholder="Contoh: 241120172">
                             </div>
 
                             <!-- Program Studi -->
@@ -79,7 +79,7 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="jenis">Jenis Layanan</label>
-                                <select id="jenis" name="jenis">
+                                <select id="layanan" name="jenis">
                                     <option value="">--Pilih Layanan--</option>
                                     <option value="SKA">SKA - Surat Aktif Kuliah</option>
                                     <option value="CAK">CAK - Cuti Akademik</option>
@@ -91,7 +91,7 @@
                             <!-- Tanggal -->
                             <div class="form-group">
                                 <label for="tanggal">Tanggal Pengajuan</label>
-                                <input type="date" id="tanggal" name="tanggal" required>
+                                <input type="date" id="tanggal" name="tanggal">
                             </div>
                         </div>
 
@@ -138,6 +138,7 @@
         </div>
     </footer>
 
+    <script src="JS/srcipt.js"></script>
 </body>
 
 </html>
